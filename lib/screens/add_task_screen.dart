@@ -112,7 +112,7 @@ class _AddTaskScreenState extends State<AddTaskScreen> {
 
                 ),
                 SizedBox(height: 20.0,),
-                Text(widget.task == null ? 'Eylüş alacaklarını yaz' : 'Eylüş alacaklarını güncelle veya sil',  style: widget.task == null ? TextStyle(color: Colors.black, fontSize: 30.0,fontWeight: FontWeight.bold):TextStyle(color: Colors.black, fontSize: 20.0,fontWeight: FontWeight.bold) ,),
+                Text(widget.task == null ? 'Alınacaklar' : 'Alınacakları güncelleyin veya silin',  style: widget.task == null ? TextStyle(color: Colors.black, fontSize: 30.0,fontWeight: FontWeight.bold):TextStyle(color: Colors.black, fontSize: 20.0,fontWeight: FontWeight.bold) ,),
                 SizedBox(height: 10.0,),
                 Form(
                   key: _formKey,
@@ -129,7 +129,7 @@ class _AddTaskScreenState extends State<AddTaskScreen> {
                               ),
 
                           ),
-                        validator: (input)=>input.trim().isEmpty ? 'Bir şeyler yaz' : null,
+                        validator: (input)=>input.trim().isEmpty ? 'Bir şeyler yazınız' : null,
                         onSaved: (input)=>_title=input,
                         initialValue: _title,
                       ),
@@ -180,7 +180,7 @@ class _AddTaskScreenState extends State<AddTaskScreen> {
                           ),
 
                         ),
-                        validator: (input)=>_priority == null ? 'Öncelik seç bakalım' : null,
+                        validator: (input)=>_priority == null ? 'Öncelik seçiniz' : null,
                         onChanged: (value){
                           setState(() {
                             _priority = value;

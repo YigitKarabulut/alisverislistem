@@ -78,23 +78,7 @@ class _AlisverisListemSayfasiState extends State<AlisverisListemSayfasi> {
       appBar: AppBar(
 
         title: const Text('Alışveriş Listem'),
-        actions: <Widget>[
-          IconButton(
 
-            icon: const Icon(Icons.add_alert),
-            tooltip: 'Show Snackbar',
-
-            onPressed: () {
-
-              ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(content:  Text('Dünyanın en tatlı insanı okuyor şu an burayı')));
-
-
-            },
-          ),
-
-
-        ],
       ),
 
       floatingActionButton: FloatingActionButton  (
@@ -132,9 +116,9 @@ class _AlisverisListemSayfasiState extends State<AlisverisListemSayfasi> {
           child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-          Text("Alıncaklar", style: TextStyle(color: Colors.purple,fontSize: 30.0,fontWeight: FontWeight.bold),textAlign: TextAlign.center,),
+          Text("Alıncaklar", style: TextStyle(color: Theme.of(context).primaryColor,fontSize: 30.0,fontWeight: FontWeight.bold),textAlign: TextAlign.center,),
           SizedBox(height: 10.0),
-          Text('$completedTaskCount of ${snapshot.data.length}', style: TextStyle(color: Colors.purpleAccent, fontSize: 15.0, fontWeight: FontWeight.w600),textAlign: TextAlign.center,),
+          Text('$completedTaskCount of ${snapshot.data.length}', style: TextStyle(color: Theme.of(context).accentColor, fontSize: 15.0, fontWeight: FontWeight.w600),textAlign: TextAlign.center,),
           ],
           ),
           );

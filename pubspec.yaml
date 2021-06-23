@@ -36,7 +36,7 @@ dependencies:
 flutter_icons:
   android: true
   ios: true
-  image_path: "lib/icons/icons8-butterfly-96.png"
+  image_path: "lib/icons/icons8-butterfly-48.png"
 
 dev_dependencies:
   flutter_test:
