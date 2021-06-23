@@ -1,16 +1,9 @@
 # alisverislistem
 
-A new Flutter application.
+Yapılacaklar listesi ve not listesi karışımı bir 'Alışveriş Listesi' uygulaması.
+Tarih, öncelik ayarlayabiliyorsunuz. Checkbox ile kontrol sağlayabiliyorsunuz.
+Yapıldı olarak işaretlediğinizde yazıların üzeri çizili oluyor. 
+Yapılıp yapılmadığını sadece checkbox ile değil üzeri çizgili olduğunda daha rahat anlayabiliyorsunuz.
+Güncelleyebilir ve silebilirsiniz.
+SqlFlite kütüphanesi ile veritabanına rahatça kaydedip oradan güncelleme, silme işlemi gerçekleştirebiliyorsunuz.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
